@@ -7,19 +7,33 @@ public class Lab_02
 		int z = x * y;
 		
 		System.out.println(x + " multiplied by " + y + " is " + z);
-	}
-}
-{
-	public static void main(String[]args)
-	{
-		int Name = "Shayla Parthasarathy";
-		int Address = "5548 Caminito Vista Lujo";
-		int City = "San Diego";
-		int State = "CA";
+		System.out.println(
+		);
+	
+		String Name = "Shayla Parthasarathy";
+		String Address = "5548 Caminito Vista Lujo";
+		String City = "San Diego";
+		String State = "CA";
 		int ZipCode = 92130;
 		
 		System.out.println(Name);
 		System.out.println(Address);
-		System.out.println(City + " , " + State + " , " + ZipCode);
+		System.out.println(City + ", " + State + " " + ZipCode);
+		System.out.println(
+		);
+		
+		int l = 2;
+		int w = 4;
+		int h = 6;
+		int lw = l * w;
+		int wh = w * h;
+		int lh = l * h;
+		
+		System.out.println("The surface area of the prism is " + 2*(lw + wh + lh));
+		
+		
+		
+
 	}
+
 }
