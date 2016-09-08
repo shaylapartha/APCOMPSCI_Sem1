@@ -1,0 +1,28 @@
+﻿Primitive Data Types
+After learning about variable initialization and assignment, you should be aware that data types are serious business. They can determine the success or failure of your project. Therefore, you should know them extremely well. This document should serve as a quick reference guide for the data types we will be using most often in this class. Research each of the terms below and write their definitions in the boxes below
+ 
+int :
+* Integers
+* can hold whole numbers (no decimals or fractions)
+
+
+	Double:
+* Can hold whole numbers, including decimals
+	boolean:
+* Can hold the values “true” or “false”
+* Like on/off switch
+	float: 
+* Can be used instead of double
+* Can hold ½ as much as double
+* Add “f” at the end of the value, before the semicolon
+
+
+	char: 
+* For a single character value
+* Can be used to store any character 
+	short: 
+* Used to store a smaller number
+* Min. value = -32,768
+* Max. value = 32,768
+	long: 
+* Used to hold much larger values
