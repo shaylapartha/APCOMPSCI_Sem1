@@ -1,8 +1,8 @@
-public class APLab_04
+public class APLab_04ex_01
 {
 	public static void main(String[]args)
 	{
-		APLab_04 form = new APLab_04();
+		APLab_04ex_01 form = new APLab_04ex_01();
 		System.out.println("<<<<<<<<<<_Receipt_>>>>>>>>>>");
 		
 		String item1 = "Cheese Sandwich........";
