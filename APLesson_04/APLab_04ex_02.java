@@ -32,7 +32,7 @@ public class APLab_04ex_02
 		form.format(school, year);
 		form.format(first, last);
 		form.format(title, grade);
-		System.out.println("\n****************************************************");
+		System.out.println("****************************************************");
 		
 	}
 	public void format(String column, String column2)
