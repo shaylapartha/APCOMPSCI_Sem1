@@ -10,7 +10,8 @@ public class Cube2
 		side = kb.nextDouble();
 		
 		print(calcSurf(side));
-	public static double calcSurf()
+	}
+	public static double calcSurf(double side)
 	{
 		return (side*side)*6;
 	}
