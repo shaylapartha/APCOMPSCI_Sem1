@@ -8,11 +8,22 @@ public class Dice
 		int compRoll = rand.nextInt(6)+1;
 		System.out.println("You rolled a " + yourRoll);
 		System.out.println("Computer rolled a " + compRoll);
+	
+
+		
+		if(yourRoll > compRoll)
+		{
+			System.out.println("The winner is you!");
+		}
+		
+		if(compRoll > yourRoll)
+		{
+			System.out.println("Sorry, the winner is the computer.");
+		}
 	}
 	
-	public static boolean rollDice()
+	public static boolean rollDice(int yourRoll, int compRoll)
 	{
-		boolean 
-		if()
+		return yourRoll > compRoll;
 	}
 }
