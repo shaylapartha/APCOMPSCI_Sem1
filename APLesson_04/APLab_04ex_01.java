@@ -9,7 +9,6 @@ public class APLab_04ex_01
 		Scanner keyboard = new Scanner(System.in);
 		APLab_04ex_01 form = new APLab_04ex_01();
 		
-		System.out.println("<<<<<<<<<<<<<<__Receipt__>>>>>>>>>>>>>>\n");
 		
 		System.out.println("Please enter item 1:");
 		String item1 = keyboard.nextLine();
@@ -29,22 +28,22 @@ public class APLab_04ex_01
 		double price3 = keyboard.nextDouble();
 		
 
-		String line1 = "Subtotal:";
-		String line2 = "Tax:";
-		String line3 = "Total:";
+		String item4 = "Subtotal:";
+		String item5 = "Tax:";
+		String item6 = "Total:";
 				
-		double total1 = price1 + price2 + price3;
-		double total2 = 0.05*total1;
-		double total3 = total1 + total2;
+		double price4 = price1 + price2 + price3;
+		double price5 = 0.05*price4;
+		double price6 = price4 + price5;
 				
-		
+		System.out.println("<<<<<<<<<<<<<<__Receipt__>>>>>>>>>>>>>>\n");
 		form.format(item1, price1);
 		form.format(item2, price2);
 		form.format(item3, price3);
 		System.out.println("\n");
-		form.format(line1, total1);
-		form.format(line2, total2);
-		form.format(line3, total3);
+		form.format(item4, price4);
+		form.format(item5, price5);
+		form.format(item6, price6);
 		
 		System.out.println("\n");
 		System.out.println(" ______________________________________________________ ");
@@ -55,10 +54,7 @@ public class APLab_04ex_01
 	{
 		System.out.printf("\n*%22s.........  %22.2f", item, price);
 	}
-	public void formatting(String line, double total) 
-	{
-		System.out.printf("\n*%7s  %7.2f", line, total);
 		
 	}
-}
+
 

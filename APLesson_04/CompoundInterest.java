@@ -14,12 +14,14 @@ public class CompoundInterest
 		int n = keyboard.nextInt();
 		System.out.println("Enter how many years the life of the loan will be:");
 		int t = keyboard.nextInt();
-		double total = monthly.calcTotal(r, P, n, t);
-		System.out.printf("Your total monthly payment is $%5.2f\n", total);
+		double payment = monthly.calcPayment(r, P, n, t);
+		System.out.printf("Your total monthly payment is $%5.2f\n", payment);
 	}
 	
-	public double calcTotal(double r, double P, int n, int t)
+	public double calcPayment(double r, double P, int n, int t)
 	{
-		return (P/12 * Math.pow((1+(r/n)), n*t));
+		double total = P * (Math.pow((1+(r/n)), n*t));
+		return total/(12*t);
+		
 	}
 }
