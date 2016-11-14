@@ -7,6 +7,9 @@ public class RightTriangle
 		System.out.println("Please enter a word: ");
 		String word = kb.next();
 
-		for(int i = 0; )
+		for(int i = word.length()-1; i>= 0; i--)
+		{
+			System.out.println(word.substring(i));
+		}
 	}
 }
