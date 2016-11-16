@@ -11,6 +11,7 @@ public class AverageDigits
 		System.out.println("Please enter an integer: ");
 		number = kb.nextInt();
 		avDigits();
+		System.out.println("The average of the digits in " + number + " is " + average);
 		
 	}
 	public static void avDigits()
@@ -23,6 +24,7 @@ public class AverageDigits
 			average += lastDigit;
 			num /= 10;
 		}
+		average = (average/digits);
 		
 	}
 
