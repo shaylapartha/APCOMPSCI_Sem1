@@ -17,10 +17,10 @@ public class TreeDeg60
 	public static void tree(String word, int start, int stop)
 	{
 		if (start <= stop)
-		
+		{
 			System.out.printf("%20s\n", word.substring(0, start));
 			start ++;
-			tree(word, 0, word.length());
-		
+			tree(word, start, stop);
+		}
 	}
 }
