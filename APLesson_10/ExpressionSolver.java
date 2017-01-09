@@ -11,22 +11,6 @@ public class ExpressionSolver
 	
 		ArrayList<String>equation = new ArrayList<>(Arrays.asList(expression.split(" ")));
 		doEquation(equation);
-		
-		int i=0;
-		while(i < equation.size())
-		{
-			if(i < equation.size() && equation.get(i).equals("+"))
-			{
-				equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) + Integer.parseInt(equation.get(i+1))));
-				equation.remove(i-1);
-				equation.remove(i);
-			}	
-			else
-			{
-				equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) - Integer.parseInt(equation.get(i+1))));
-				i++;
-			}
-		}
 		System.out.println(equation);
 
 	}
@@ -36,15 +20,39 @@ public class ExpressionSolver
 		int i=0;
 		while(i < equation.size())
 		{
-			if(i < equation.size() && equation.get(i).equals("*"))
+			if(equation.get(i).equals("*") || equation.get(i).equals("/"))
 			{
-				equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) * Integer.parseInt(equation.get(i+1))));
-				equation.remove(i-1);
-				equation.remove(i);
+				if(equation.get(i).equals("*"))
+				{
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) * Integer.parseInt(equation.get(i+1))));
+					equation.remove(i-1);
+					equation.remove(i);
+				}
+				else
+				{
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) / Integer.parseInt(equation.get(i+1))));
+					equation.remove(i-1);
+					equation.remove(i);
+				}
+				
+			}
+			else if(equation.get(i).equals("+") || equation.get(i).equals("-"))
+			{
+				if(equation.get(i).equals("+"))
+				{
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) + Integer.parseInt(equation.get(i+1))));
+					equation.remove(i-1);
+					equation.remove(i);
+				}
+				else
+				{
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) - Integer.parseInt(equation.get(i+1))));
+					equation.remove(i-1);
+					equation.remove(i);
+				}
 			}
 			else
 			{
-				equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) / Integer.parseInt(equation.get(i+1))));
 				i++;
 			}
 			
