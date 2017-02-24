@@ -11,7 +11,7 @@ public abstract class Toy
 	
 	public Toy(String n)
 	{
-		this.name = "";
+		this.name = n;
 		this.count = 1;
 	}
 	
@@ -39,6 +39,6 @@ public abstract class Toy
 	
 	public String toString()
 	{
-		return "[" + name + "]" + "[" + count + "]";
+		return name + " " + count;
 	}
 }

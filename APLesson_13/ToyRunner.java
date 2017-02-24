@@ -3,17 +3,11 @@ public class ToyRunner
 {
 	public static void main(String[]args)
 	{
-		ArrayList<Toy>ToyList = new ArrayList<Toy>();
+		AFigure AFobject = new AFigure("Wonder Woman");
+		Car Carobject = new Car("Honda");
 		
-		ToyList.add(new Car("Honda"));
-		ToyList.add(new AFigure("Superwoman"));
-		ToyList.add(new Car("Ferrari"));
-		ToyList.add(new AFigure("Wonder Woman"));
-		
-		for(Toy object : ToyList)
-		{
-			System.out.println(object);
-		}
+		System.out.println(AFobject);
+		System.out.println(Carobject);
 	}
 }
 
