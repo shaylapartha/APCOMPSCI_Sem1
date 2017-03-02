@@ -6,13 +6,13 @@ public class GameSystemClass
 	public GameSystemClass()
 	{
 		this.platform = "";
-		this.SerialNo = 1234567;
+		this.SerialNo = (int)(Math.random() * 9000000) + 1000000;
 	}
 	
 	public GameSystemClass(String p)
 	{
 		this.platform = p;
-		this.SerialNo = 1234567;
+		this.SerialNo = (int)(Math.random() * 9000000) + 1000000;
 	}
 	
 	public String getPlatform()

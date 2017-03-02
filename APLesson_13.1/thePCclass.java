@@ -17,7 +17,7 @@ public class thePCclass extends GameSystemClass
 		return "Keyboard and Mouse";
 	}
 	
-	public String getPlatform()
+	public String toString()
 	{
 		return "Platform: " + getPlatform() + "\nSerial Number: " + getSerialNo() + "\nSystem Input: " + systemInput() + "\n";
 	}
