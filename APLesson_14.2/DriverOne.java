@@ -25,7 +25,26 @@ public class DriverOne
            printout += "\nDistance for " + l.getID() + ": (" + getDistance(l.getLoc(), home)+ ")";
        }
 
-       System.out.println(printout);
+       printout += "\n\n" + "==========================";
+	   
+	   for (LocationDos l : locate)
+	   {
+		   double xnew = Math.round((1 + (Math.random() * 100)) * 100.00)/100.00;
+		   double ynew = Math.round((1 + (Math.random() * 100)) * 100.00)/100.00;
+		   double[] moves = {xnew, ynew};
+		   printout += "\nAfter " + l.getID() + " Moved " + getLocation(moves);
+		   l.move(xnew,2*ynew);
+		   printout += "\nNew Location: (" + getLocation(l.getLoc()) + ")\n";
+	   }
+	   
+	   printout += "\n\n" + "==========================" + "\nDistance from home...";
+	   
+	   for (LocationDos l : locate)
+	   {
+		   printout += "\nDistance for " + l.getID() + ": (" + getDistance(l.getLoc(), home)+ ")";
+	   }
+	   
+	   System.out.println(printout);
    }
 
 
