@@ -13,8 +13,8 @@ public class CardTester {
  		Card two = new Card("2", "Spades",3);
   		Card three = new Card("3", "Hearts", 3);
   
-  		System.out.println("One matches two?" + one.matches(two));
- 		System.out.println("One matches three?" + one.matches(three));    
+  		System.out.println("One matches two? " + one.matches(two));
+ 		System.out.println("One matches three? " + one.matches(three));    
  		System.out.println("Suit of Card One: " + one.suit());
   		System.out.println("Card one: " + one.toString());
 	}
