@@ -11,10 +11,10 @@ public class PictureTester
   /** Method to test zeroBlue */
   public static void testZeroBlue()
   {
-    Picture beach = new Picture("beach.jpg");
-    beach.explore();
-    beach.zeroBlue();
-    beach.explore();
+    Picture arch = new Picture("arch.jpg");
+    arch.explore();
+    arch.zeroBlue();
+    arch.explore();
   }
   
   /** Method to test mirrorVertical */
@@ -25,6 +25,24 @@ public class PictureTester
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
+  
+   public static void testMirrorVerticalRightToLeft()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVertical();
+    caterpillar.explore();
+  }
+  
+  
+   public static void testMirrorHorizontal()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontal();
+    caterpillar.explore();
+  }
+  
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
@@ -58,19 +76,21 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
+    //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
-    //testGrayscale();
+    //testgrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
+	//testMirrorVerticalRightToLeft();
+	//testMirrorHorizontal();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    //testCollage();
+    testCollage();
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
